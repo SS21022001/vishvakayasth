@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Become a Member - Vishva Kayasth Parivar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Vishva Kayasth Parivar</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="board.html">National Board of Directors</a>
+            <a href="membership.html">Become a Member</a>
+            <a href="donate.html">Donate Us</a>
+            <a href="login.html">Login</a>
+            <a href="signup.html">Signup</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="membership-intro">
+            <h2>Join the Vishva Kayasth Parivar</h2>
+            <p>Fill out this quick application to become part of our community.</p>
+        </section>
+
+        <!-- Enhanced Membership Form Section -->
+        <section class="membership-form">
+            <h3>Membership Application Form</h3>
+
+            <!-- Progress Indicator -->
+            <div class="form-progress">
+                <span>Step 1 of 3: Personal Information</span>
+            </div>
+
+            <form action="#" method="POST">
+                <!-- Personal Information Section -->
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" placeholder="yourname@example.com" required>
+
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+1-234-567-8900" required>
+                </fieldset>
+
+                <!-- Address Section -->
+                <fieldset>
+                    <legend>Address Information</legend>
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" rows="3" placeholder="Street, City, State, Zip" required></textarea>
+                </fieldset>
+
+                <!-- Membership Type Section -->
+                <fieldset>
+                    <legend>Membership Details</legend>
+                    <label for="membership-type">Select Membership Type:</label>
+                    <select id="membership-type" name="membership-type" required>
+                        <option value="" disabled selected>Select an option</option>
+                        <option value="individual">Individual Membership - $50</option>
+                        <option value="family">Family Membership - $100</option>
+                        <option value="lifetime">Lifetime Membership - $500</option>
+                    </select>
+                </fieldset>
+
+                <button type="submit" class="submit-button">Submit Application</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Vishva Kayasth Parivar. All rights reserved.</p>
+    </footer>
+</body>
+</html>
